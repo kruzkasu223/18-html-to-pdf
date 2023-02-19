@@ -44,6 +44,10 @@ const Home: NextPage = () => {
         <h1 className="m-6 text-4xl font-extrabold tracking-tight">
           18/27 - HTML to PDF
         </h1>
+        <p>
+          (this project is only working on local, doesn&apos;t work once
+          deployed.)
+        </p>
         <Loading loading={HTMLtoPDFMutation.isLoading} />
         <div className="m-auto max-w-7xl">
           <div className="flex flex-col gap-8">
