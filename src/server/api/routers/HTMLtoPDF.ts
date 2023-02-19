@@ -12,8 +12,8 @@ export const HTMLtoPDFRouter = createTRPCRouter({
       const page = await browser.newPage()
       const html = input.text
       await page.setContent(html, { waitUntil: "domcontentloaded" })
+
       const pdf = await page.pdf({
-        path: "result.pdf",
         margin: { top: "50px", right: "25px", bottom: "50px", left: "25px" },
         printBackground: true,
         format: "A4",
