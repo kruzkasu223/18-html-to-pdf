@@ -45,8 +45,8 @@ const Home: NextPage = () => {
           18/27 - HTML to PDF
         </h1>
         <p>
-          (this project is only working on local, doesn&apos;t work once
-          deployed.)
+          (this project only works locally due to puppeteer&apos;s issue on edge
+          servers.)
         </p>
         <Loading loading={HTMLtoPDFMutation.isLoading} />
         <div className="m-auto max-w-7xl">
